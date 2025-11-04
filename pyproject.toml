@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mnist"
+version = "0.1.0"
+description = "practice pytorch with mnist"
+authors = ["feng <yinmathematic@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.12"
+torch = "^2.9.0"
+torchvision = "^0.24.0"
+matplotlib = "^3.10.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
