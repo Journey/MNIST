@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torchvision import datasets, transforms
 from SimpleNN import SimpleNN
 import config as config
 
@@ -24,6 +23,7 @@ def train(model: nn.Module):
             output = model(data)   # 前向传播
             loss = config.criterion(output, target)  # 计算损失
             loss.backward()        # 反向传播计算梯度
+            # 根据计算的梯度与学习率更新模型参数
             optimizer.step()       # 更新模型参数
 
             # 统计信息
