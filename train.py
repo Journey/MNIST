@@ -5,7 +5,7 @@ from torchvision import datasets, transforms
 from SimpleNN import SimpleNN
 import config as config
 
-
+# 设置随机种子以确保结果可复现: 相同的种子会产生相同的随机数序列 => 伪随机
 torch.manual_seed(42)
 
 def train(model: nn.Module):
