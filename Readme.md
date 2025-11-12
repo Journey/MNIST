@@ -1,4 +1,4 @@
-# MNIST 手写数字识别
+# Playground: MNIST 手写数字识别
 
 使用 PyTorch 实现的 MNIST 手写数字识别项目，包含简单全连接网络和卷积神经网络两种模型。
 
